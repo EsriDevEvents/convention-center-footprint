@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Palm Springs Convention Center, Indoor Footprint | Esri Developer Summit</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.22/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.22/"></script>
+
+    <script>
+      require(["esri/config", "esri/views/MapView", "esri/WebMap"], (esriConfig, MapView, WebMap) => {
+
+        esriConfig.apiKey = "AAPK8eff26d31558480387db1d4e2784c1bc6922rY15sbzNqf9VDLDcABlraU7QPKQO9gDDUgavm4K7bR5JvSSuz9RfSb5_yd7F";
+
+        const webmap = new WebMap({
+          portalItem: {
+            id: "7c05d74ad1a24f7ab3851cadb4b7968a"
+          }
+        });
+
+        const view = new MapView({
+          map: webmap,
+          container: "viewDiv"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
