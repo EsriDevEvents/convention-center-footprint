@@ -6,23 +6,23 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>Palm Springs Convention Center, Indoor Footprint | Esri Developer Summit</title>
+
 <!-- Primary Meta Tags -->
 <title>Esri DevSummit 2022 | Convention center footprint</title>
-<meta name="title" content="Esri DevSummit 2022 | Convention center footprint">
+<meta name="title" content="Esri DevSummit 2023 | Convention center footprint">
 <meta name="description" content="Explore and contribute with our map. Code is hosted on GitHub.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://metatags.io/">
-<meta property="og:title" content="Esri DevSummit 2022 | Convention center footprint">
+<meta property="og:title" content="Esri DevSummit 2023 | Convention center footprint">
 <meta property="og:description" content="Explore and contribute with our map. Code is hosted on GitHub.">
 <meta property="og:image" content="convention-center-map-banner.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
-<meta property="twitter:title" content="Esri DevSummit 2022 | Convention center footprint">
+<meta property="twitter:title" content="Esri DevSummit 2023 | Convention center footprint">
 <meta property="twitter:description" content="Explore and contribute with our map. Code is hosted on GitHub.">
 <meta property="twitter:image" content="convention-center-map-banner.png">
 
@@ -64,15 +64,16 @@
 
     <link
       rel="stylesheet"
-      href="https://js.arcgis.com/4.22/esri/themes/light/main.css"
+      href="https://js.arcgis.com/4.25/esri/themes/light/main.css"
     />
-    <script src="https://js.arcgis.com/4.22/"></script>
+    <script src="https://js.arcgis.com/4.25/"></script>
 
     <script>
       require(["esri/config", "esri/views/MapView", "esri/WebMap"], (esriConfig, MapView, WebMap) => {
 
         esriConfig.apiKey = "AAPK8eff26d31558480387db1d4e2784c1bc6922rY15sbzNqf9VDLDcABlraU7QPKQO9gDDUgavm4K7bR5JvSSuz9RfSb5_yd7F";
 
+        // https://www.arcgis.com/home/item.html?id=7c05d74ad1a24f7ab3851cadb4b7968a
         const webmap = new WebMap({
           portalItem: {
             id: "7c05d74ad1a24f7ab3851cadb4b7968a"
