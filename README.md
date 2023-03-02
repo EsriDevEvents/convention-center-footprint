@@ -1,5 +1,5 @@
 # convention-center-footprint
-Palm Springs convention center footprint for Esri DevSummit 2022
+Palm Springs convention center footprint for Esri DevSummit 2023
 
 [View map](https://esridevevents.github.io/convention-center-footprint/)
 
